@@ -1,0 +1,64 @@
+<<<<<<< HEAD
+/* Custom styles complementing Tailwind CSS */
+
+/* Smooth Transition for Theme Switch */
+=======
+/* Transiciones suaves para cambio de tema */
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+<<<<<<< HEAD
+/* Custom Skill Card Hover Effect */
+=======
+/* Efecto Hover en Tarjetas de Habilidades */
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+.skill-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+<<<<<<< HEAD
+/* Custom Project Card Hover Effect */
+=======
+/* Efecto Hover en Tarjetas de Proyectos */
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+.project-card {
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    border-color: #3b82f6;
+}
+
+<<<<<<< HEAD
+/* Custom Scrollbar */
+=======
+/* Estilo para Scrollbar */
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background: #334155;
+<<<<<<< HEAD
+}
+=======
+}
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2

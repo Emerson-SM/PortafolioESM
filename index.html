@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Emerson Solano Montero | Portfolio</title>
+=======
+    <title>Emerson Solano Montero | Portafolio</title>
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#3b82f6',
+                            emerald: '#10b981',
+                            dark: '#0f172a',
+                            cardDark: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300 min-h-screen flex flex-col font-sans">
+
+<<<<<<< HEAD
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-gray-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">
+                &lt;Emerson.Dev /&gt;
+=======
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-slate-900/80 border-b border-gray-200 dark:border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#hero" class="text-xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">
+                &lt;EmersonSM /&gt;
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6">
+                <a href="#about" class="hover:text-blue-500 transition-colors font-medium" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a>
+                <a href="#skills" class="hover:text-blue-500 transition-colors font-medium" data-es="Habilidades" data-en="Skills">Habilidades</a>
+                <a href="#projects" class="hover:text-blue-500 transition-colors font-medium" data-es="Proyectos" data-en="Projects">Proyectos</a>
+                <a href="#certifications" class="hover:text-blue-500 transition-colors font-medium" data-es="Certificaciones" data-en="Certifications">Certificaciones</a>
+                <a href="#contact" class="hover:text-blue-500 transition-colors font-medium" data-es="Contacto" data-en="Contact">Contacto</a>
+            </nav>
+
+            <div class="flex items-center space-x-3">
+                <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="p-2 rounded-lg bg-gray-200 dark:bg-slate-800 hover:bg-gray-300 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle Theme">
+                    <i id="theme-icon-sun" class="fa-solid fa-sun text-amber-500 hidden"></i>
+                    <i id="theme-icon-moon" class="fa-solid fa-moon text-slate-700 dark:text-slate-200"></i>
+                </button>
+
+                <!-- Language Toggle Button -->
+                <button id="lang-toggle" class="px-3 py-1 text-sm font-semibold rounded-lg bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300 border border-blue-300 dark:border-blue-700 hover:bg-blue-200 dark:hover:bg-blue-800/50 transition-colors">
+                    <span id="lang-text">EN</span>
+                </button>
+
+                <!-- Mobile Menu Toggle Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-200">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+<<<<<<< HEAD
+        <!-- Mobile Navigation Menu -->
+=======
+        <!-- Mobile Nav Menu -->
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-slate-900 border-b border-gray-200 dark:border-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#about" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-slate-800" data-es="Sobre Mí" data-en="About Me">Sobre Mí</a>
+            <a href="#skills" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-slate-800" data-es="Habilidades" data-en="Skills">Habilidades</a>
+            <a href="#projects" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-slate-800" data-es="Proyectos" data-en="Projects">Proyectos</a>
+            <a href="#certifications" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-slate-800" data-es="Certificaciones" data-en="Certifications">Certificaciones</a>
+            <a href="#contact" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-slate-800" data-es="Contacto" data-en="Contact">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="hero" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28 flex flex-col items-center text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300 text-sm font-medium mb-6">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                <span data-es="Disponible para nuevos proyectos y roles" data-en="Available for new projects & roles">Disponible para nuevos proyectos y roles</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight mb-4">
+                Emerson Solano Montero
+            </h1>
+            <h2 class="text-xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-emerald-400 mb-6">
+                Backend Developer & Data Analyst
+            </h2>
+            <p class="max-w-2xl text-gray-600 dark:text-gray-300 text-lg sm:text-xl mb-8" data-es="Especializado en la creación de aplicaciones robustas con Python, REST APIs, bases de datos relacionales y análisis de datos enfocados en soluciones tecnológicas eficientes." data-en="Specialized in building robust applications with Python, REST APIs, relational databases, and data analysis focused on efficient tech solutions.">
+                Especializado en la creación de aplicaciones robustas con Python, REST APIs, bases de datos relacionales y análisis de datos enfocados en soluciones tecnológicas eficientes.
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <a href="#projects" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all shadow-lg shadow-blue-500/25 flex items-center gap-2" data-es="Ver Proyectos" data-en="View Projects">
+                    <i class="fa-solid fa-code"></i> Ver Proyectos
+                </a>
+                <a href="#contact" class="px-6 py-3 rounded-xl bg-gray-200 dark:bg-slate-800 hover:bg-gray-300 dark:hover:bg-slate-700 font-semibold transition-all flex items-center gap-2" data-es="Contacto" data-en="Contact Me">
+                    <i class="fa-solid fa-envelope"></i> Contacto
+                </a>
+            </div>
+            <div class="flex space-x-5 mt-10 text-2xl text-gray-600 dark:text-gray-400">
+                <a href="https://github.com/Emerson-SM" target="_blank" class="hover:text-blue-500 transition-colors" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/emerson-sm" target="_blank" class="hover:text-blue-500 transition-colors" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:emerson95sm@gmail.com" class="hover:text-blue-500 transition-colors" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 bg-white dark:bg-slate-800/50 border-y border-gray-200 dark:border-slate-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-user-gear text-blue-500"></i>
+                    <span data-es="Sobre Mí" data-en="About Me">Sobre Mí</span>
+                </h2>
+                <div class="grid md:grid-cols-2 gap-10 items-center">
+                    <div class="space-y-4 text-gray-600 dark:text-gray-300">
+                        <p data-es="Desarrollador Backend y Analista de Datos radicado en San José, Costa Rica. Poseo experiencia en la construcción de aplicaciones web utilizando Python, FastAPI, Flask, SQLAlchemy y MySQL." data-en="Backend Developer and Data Analyst based in San José, Costa Rica. Experienced in building web applications using Python, FastAPI, Flask, SQLAlchemy, and MySQL.">
+                            Desarrollador Backend y Analista de Datos radicado en San José, Costa Rica. Poseo experiencia en la construcción de aplicaciones web utilizando Python, FastAPI, Flask, SQLAlchemy y MySQL.
+                        </p>
+                        <p data-es="Mi enfoque abarca el diseño eficiente de bases de datos, desarrollo de APIs REST seguras (JWT, Hash de contraseñas), integración ORM y estructuración limpia bajo arquitectura MVC. Apasionado por el aprendizaje continuo y la transformación de datos en decisiones estratégicas." data-en="My focus encompasses efficient database design, secure REST API development (JWT, Password Hashing), ORM integration, and clean structuring under MVC architecture. Passionate about continuous learning and transforming data into strategic decisions.">
+                            Mi enfoque abarca el diseño eficiente de bases de datos, desarrollo de APIs REST seguras (JWT, Hash de contraseñas), integración ORM y estructuración limpia bajo arquitectura MVC. Apasionado por el aprendizaje continuo y la transformación de datos en decisiones estratégicas.
+                        </p>
+                        <div class="pt-4 border-t border-gray-200 dark:border-slate-700 grid grid-cols-2 gap-4">
+                            <div>
+                                <span class="block text-xs text-gray-400 uppercase font-semibold" data-es="Ubicación" data-en="Location">Ubicación</span>
+                                <span class="font-medium">San José, Costa Rica</span>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-gray-400 uppercase font-semibold" data-es="Educación" data-en="Education">Educación</span>
+                                <span class="font-medium" data-es="Ingeniería Informática (UNED)" data-en="Computer Engineering (UNED)">Ingeniería Informática (UNED)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 dark:bg-slate-900 p-6 rounded-2xl border border-gray-200 dark:border-slate-700 space-y-4">
+                        <h3 class="text-xl font-bold flex items-center gap-2 text-blue-500">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span data-es="Formación Académica" data-en="Academic Education">Formación Académica</span>
+                        </h3>
+                        <div class="border-l-2 border-blue-500 pl-4 py-1 space-y-1">
+                            <h4 class="font-bold text-gray-800 dark:text-gray-100" data-es="Bachillerato en Ingeniería Informática (En curso)" data-en="Bachelor's in Computer Engineering (In Progress)">Bachillerato en Ingeniería Informática (En curso)</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Universidad Nacional de Educación a Distancia (UNED)</p>
+                        </div>
+                        <div class="border-l-2 border-emerald-500 pl-4 py-1 space-y-1">
+                            <h4 class="font-bold text-gray-800 dark:text-gray-100" data-es="Diplomado en Informática (Graduado 2026)" data-en="Associate Degree in IT (Graduated 2026)">Diplomado en Informática (Graduado 2026)</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Universidad Nacional de Educación a Distancia (UNED)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-layer-group text-emerald-500"></i>
+                    <span data-es="Habilidades Técnicas" data-en="Technical Skills">Habilidades Técnicas</span>
+                </h2>
+                <div class="grid md:grid-cols-3 gap-6">
+<<<<<<< HEAD
+                    <!-- Languages & Backend -->
+=======
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+                    <div class="skill-card bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700">
+                        <div class="text-blue-500 text-3xl mb-4"><i class="fa-solid fa-server"></i></div>
+                        <h3 class="text-xl font-bold mb-4" data-es="Backend & Lenguajes" data-en="Backend & Languages">Backend & Lenguajes</h3>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Python (FastAPI, Flask)</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> APIs REST & Jinja2</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> C++ / Java / SQL</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> HTML5 & CSS3</li>
+                        </ul>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- Databases & Architecture -->
+=======
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+                    <div class="skill-card bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700">
+                        <div class="text-emerald-500 text-3xl mb-4"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="text-xl font-bold mb-4" data-es="Bases de Datos & Auth" data-en="Databases & Auth">Bases de Datos & Auth</h3>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> MySQL & SQLite</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> SQLAlchemy ORM</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Autenticación JWT & Hash</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Arquitectura MVC & CRUD</li>
+                        </ul>
+                    </div>
+
+<<<<<<< HEAD
+                    <!-- Tools & Environments -->
+=======
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+                    <div class="skill-card bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-slate-700">
+                        <div class="text-purple-500 text-3xl mb-4"><i class="fa-solid fa-toolbox"></i></div>
+                        <h3 class="text-xl font-bold mb-4" data-es="Herramientas & Entorno" data-en="Tools & Environment">Herramientas & Entorno</h3>
+                        <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Git & GitHub</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Visual Studio Code</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Entornos Linux</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500 text-sm"></i> Cloud Computing & Security</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16 bg-white dark:bg-slate-800/50 border-y border-gray-200 dark:border-slate-800">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-laptop-code text-blue-500"></i>
+                    <span data-es="Proyectos Destacados" data-en="Featured Projects">Proyectos Destacados</span>
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-10 max-w-xl mx-auto" data-es="Una selección de aplicaciones web y backend desarrolladas con buenas prácticas." data-en="A selection of web and backend applications built with best practices.">
+                    Una selección de aplicaciones web y backend desarrolladas con buenas prácticas.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Project 1 -->
+                    <div class="project-card bg-gray-50 dark:bg-slate-900 rounded-2xl p-6 border border-gray-200 dark:border-slate-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300">FastAPI & Jinja2</span>
+                                <a href="https://github.com/Emerson-SM/LOGIN_FASTAPI" target="_blank" class="text-gray-400 hover:text-blue-500 text-xl"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Sistema de Autenticación y Perfil de Usuarios</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-es="Aplicación web completa para registro, inicio de sesión y gestión de perfiles. Manejo seguro de sesiones, plantillas dinámicas con Jinja2 y almacenamiento con SQLAlchemy ORM y SQLite." data-en="Complete web app for registration, login, and user profiles. Secure session management, Jinja2 templates, and SQLAlchemy ORM with SQLite.">
+                                Aplicación web completa para registro, inicio de sesión y gestión de perfiles. Manejo seguro de sesiones, plantillas dinámicas con Jinja2 y almacenamiento con SQLAlchemy ORM y SQLite.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-200 dark:border-slate-800">
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">Python</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">FastAPI</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">SQLAlchemy</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">SQLite</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card bg-gray-50 dark:bg-slate-900 rounded-2xl p-6 border border-gray-200 dark:border-slate-700 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300">Flask & MySQL</span>
+                                <a href="https://github.com/Emerson-SM/CRUD_FLASK" target="_blank" class="text-gray-400 hover:text-emerald-500 text-xl"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Sistema de Gestión de Usuarios (CRUD)</h3>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4" data-es="Aplicación web CRUD para la administración de usuarios con almacenamiento persistente en MySQL, orquestado con Flask y SQLAlchemy bajo el patron de arquitectura MVC." data-en="CRUD web app for user management with persistent MySQL storage, orchestrated with Flask and SQLAlchemy using MVC architecture pattern.">
+                                Aplicación web CRUD para la administración de usuarios con almacenamiento persistente en MySQL, orquestado con Flask y SQLAlchemy bajo el patron de arquitectura MVC.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-gray-200 dark:border-slate-800">
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">Python</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">Flask</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">MySQL</span>
+                            <span class="text-xs font-medium px-2 py-1 rounded bg-gray-200 dark:bg-slate-800 text-gray-700 dark:text-gray-300">MVC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="py-16">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-award text-amber-500"></i>
+                    <span data-es="Certificaciones & Logros" data-en="Certifications & Achievements">Certificaciones & Logros</span>
+                </h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 flex items-start gap-4">
+                        <div class="p-3 bg-blue-100 text-blue-600 dark:bg-blue-900/30 dark:text-blue-400 rounded-lg text-xl"><i class="fa-brands fa-python"></i></div>
+                        <div>
+                            <h3 class="font-bold">Python Essentials 1</h3>
+<<<<<<< HEAD
+                            <p class="text-sm text-gray-500 dark:text-gray-400">INA (Instituto Nacional de Aprendizaje)</p>
+=======
+                            <p class="text-sm text-gray-500 dark:text-gray-400">INA</p>
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 flex items-start gap-4">
+                        <div class="p-3 bg-emerald-100 text-emerald-600 dark:bg-emerald-900/30 dark:text-emerald-400 rounded-lg text-xl"><i class="fa-solid fa-cloud"></i></div>
+                        <div>
+                            <h3 class="font-bold">Google Cloud Computing Foundations</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Google Cloud</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 flex items-start gap-4">
+                        <div class="p-3 bg-red-100 text-red-600 dark:bg-red-900/30 dark:text-red-400 rounded-lg text-xl"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h3 class="font-bold" data-es="Analista Junior en Ciberseguridad" data-en="Junior Cybersecurity Analyst">Analista Junior en Ciberseguridad</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">MICITT</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 flex items-start gap-4">
+                        <div class="p-3 bg-indigo-100 text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-400 rounded-lg text-xl"><i class="fa-solid fa-network-wired"></i></div>
+                        <div>
+                            <h3 class="font-bold" data-es="Gestión de Amenazas Cyber" data-en="Cyber Threat Management">Gestión de Amenazas Cyber</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Cisco Networking Academy</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 bg-white dark:bg-slate-800 rounded-xl border border-gray-200 dark:border-slate-700 flex items-start gap-4">
+                        <div class="p-3 bg-purple-100 text-purple-600 dark:bg-purple-900/30 dark:text-purple-400 rounded-lg text-xl"><i class="fa-solid fa-language"></i></div>
+                        <div>
+                            <h3 class="font-bold">English for IT 1</h3>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Cisco Networking Academy</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white dark:bg-slate-800/50 border-t border-gray-200 dark:border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-4 flex items-center justify-center gap-3">
+                    <i class="fa-solid fa-paper-plane text-blue-500"></i>
+                    <span data-es="Contacto" data-en="Contact Me">Contacto</span>
+                </h2>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-10" data-es="¿Tienes alguna propuesta o duda? ¡Escríbeme un mensaje!" data-en="Have a proposal or question? Send me a message!">
+                    ¿Tienes alguna propuesta o duda? ¡Escríbeme un mensaje!
+                </p>
+<<<<<<< HEAD
+=======
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-10" data-es="Teléfono: 88018511 | Correo: 1995jsolano@gmail.com" data-en="Telephone: 88018511 | E-mail: 1995jsolano@gmail.com">
+                    Teléfono: 88018511 | Correo: 1995jsolano@gmail.com
+                </p>
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+
+                <form id="contact-form" class="space-y-6 bg-gray-50 dark:bg-slate-900 p-8 rounded-2xl border border-gray-200 dark:border-slate-700 shadow-sm">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-medium mb-2" data-es="Nombre" data-en="Name">Nombre</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="Tu Nombre">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2" data-es="Correo Electrónico" data-en="Email Address">Correo Electrónico</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="correo@ejemplo.com">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-2" data-es="Mensaje" data-en="Message">Mensaje</label>
+                        <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 outline-none transition-all" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2" data-es="Enviar Mensaje" data-en="Send Message">
+                        <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-white dark:bg-slate-900 border-t border-gray-200 dark:border-slate-800 text-center text-sm text-gray-500">
+        <div class="max-w-6xl mx-auto px-4">
+<<<<<<< HEAD
+            <p>© 2026 Emerson Solano Montero. <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+=======
+            <p>© 2026 EJSM <span data-es="Todos los derechos reservados." data-en="All rights reserved.">Todos los derechos reservados.</span></p>
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
