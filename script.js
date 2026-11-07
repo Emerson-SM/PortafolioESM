@@ -1,20 +1,9 @@
-<<<<<<< HEAD
-// Theme and Language Controller
-
-document.addEventListener('DOMContentLoaded', () => {
-    // --- Theme Controller ---
-=======
 document.addEventListener('DOMContentLoaded', () => {
     // --- Modo Claro / Oscuro ---
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     const themeToggleBtn = document.getElementById('theme-toggle');
     const sunIcon = document.getElementById('theme-icon-sun');
     const moonIcon = document.getElementById('theme-icon-moon');
 
-<<<<<<< HEAD
-    // Check system preference or saved theme
-=======
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -41,11 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-<<<<<<< HEAD
-    // --- Language Controller ---
-=======
     // --- Control de Idioma (ES / EN) ---
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     const langToggleBtn = document.getElementById('lang-toggle');
     const langText = document.getElementById('lang-text');
     let currentLang = localStorage.getItem('lang') || 'es';
@@ -61,10 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-<<<<<<< HEAD
-    // Initialize Language
-=======
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     setLanguage(currentLang);
 
     langToggleBtn.addEventListener('click', () => {
@@ -72,11 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(nextLang);
     });
 
-<<<<<<< HEAD
-    // --- Mobile Menu Toggle ---
-=======
     // --- Menú Celular / Responsivo ---
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -91,11 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-<<<<<<< HEAD
-    // --- Contact Form Submission Handler ---
-=======
     // --- Formulario de Contacto ---
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
@@ -107,8 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
             contactForm.reset();
         });
     }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 3a69ec8b48af297620bdb9545e9d3d8d573c49b2
