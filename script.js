@@ -1,9 +1,12 @@
+// Theme and Language Controller
+
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Modo Claro / Oscuro ---
+    // --- Theme Controller ---
     const themeToggleBtn = document.getElementById('theme-toggle');
     const sunIcon = document.getElementById('theme-icon-sun');
     const moonIcon = document.getElementById('theme-icon-moon');
 
+    // Check system preference or saved theme
     const savedTheme = localStorage.getItem('theme');
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
@@ -30,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- Control de Idioma (ES / EN) ---
+    // --- Language Controller ---
     const langToggleBtn = document.getElementById('lang-toggle');
     const langText = document.getElementById('lang-text');
     let currentLang = localStorage.getItem('lang') || 'es';
@@ -46,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initialize Language
     setLanguage(currentLang);
 
     langToggleBtn.addEventListener('click', () => {
@@ -53,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(nextLang);
     });
 
-    // --- Menú Celular / Responsivo ---
+    // --- Mobile Menu Toggle ---
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
@@ -68,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Formulario de Contacto ---
+    // --- Contact Form Submission Handler ---
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {

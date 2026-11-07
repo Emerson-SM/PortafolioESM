@@ -1,9 +1,11 @@
-/* Transiciones suaves para cambio de tema */
+/* Custom styles complementing Tailwind CSS */
+
+/* Smooth Transition for Theme Switch */
 body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Efecto Hover en Tarjetas de Habilidades */
+/* Custom Skill Card Hover Effect */
 .skill-card {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -13,7 +15,7 @@ body {
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto Hover en Tarjetas de Proyectos */
+/* Custom Project Card Hover Effect */
 .project-card {
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
@@ -23,7 +25,7 @@ body {
     border-color: #3b82f6;
 }
 
-/* Estilo para Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 8px;
 }
