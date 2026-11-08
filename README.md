@@ -1,0 +1,1 @@
+HospedajeGuanacaste is a multi-tier web application built with C# and .NET. Designed for hospitality management, the solution implements a clean layer-based architecture comprising an ASP.NET Core Web API for core services, an ASP.NET Core MVC frontend for client interactions, and a dedicated Data Access Layer for ORM database operations.
